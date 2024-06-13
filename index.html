@@ -28,37 +28,110 @@
       margin: 20px 0 20px 0;
       height: 748px;
       width: 748px;
-      background-color: #232629;
+      background-color: black;
       display: grid;
-      grid-template-columns: 320px 419px 320px 320px ;
-      grid-template-rows: 414px 325px 296px 20px;
+      /*
+      grid-template-columns: 320px 419px 351px;
+      grid-template-rows: 414px 296px 296px;
+      */
+      grid-template-columns: 320px 419px;
+      grid-template-rows: 414px 325px;
       gap: 9px;
+    }
+
+    .white-containers {
+        background-color: #F0F1EC;
     }
 
     .red-container {
       background-color: #E72F24;
     }
 
-    .white-container-1 {
-      background-color: #F0F1EC;
+    .second-row {
+        display: grid;
+        grid-template-columns: 689px 50px;
+        gap: 9px;
+    }
+    
+    .lower-left-container {
+        display: grid;
+        grid-template-rows: 296px 20px;
+        gap: 9px;
     }
 
-    .white-container-2 {
-      /*
-      grid-row-start: 2;
-      grid-row-end: 3;
-      */
-      background-color: #F0F1EC;
-      order: 1;
+    .container-3 {
+        display: grid;
+        grid-template-columns: 320px 360px;
+        gap: 9px;
+    }
+
+    .bottom-container {
+        display: grid;
+        grid-template-columns: 320px 351px;
+        gap: 9px;
+    }
+    .bottom-left {
+        background-color: #F0F1EC;
+    }
+
+    .bottom-right {
+        display: grid;
+        grid-template-columns: 198px 153px;
+        gap: 9px;
+    }
+
+    .yellow-block {
+        background-color: #F9D01E;
+    }
+
+    .black-block {
+        background-color: #232629;
+    }
+
+    .lower-right-container {
+        display: grid;
+        grid-template-rows: 130px 185px;
+        gap: 10px;
+    }
+
+    .blue-container {
+      background-color: #004592;
     }
   </style>
 </head>
 
 <body>
   <div class="mondarian-container">
-    <div class="red-container"></div>
-    <div class="white-container-1"></div>
-    <div class="white-container-2"></div>
+    <div class="container-1 red-container"></div>
+    <div class="container-2 white-containers"></div>
+    <div class="second-row">
+        <div class="lower-left-container">
+            <div class="container-3">
+                <div class="right-block white-containers"></div>
+                <div class="left-block white-containers"></div>
+            </div>
+            <div class="bottom-container">
+                <div class="bottom-left"></div>
+                <div class="bottom-right">
+                    <div class="yellow-block"></div>
+                    <div class="black-block"></div>
+                </div>
+            </div>
+        </div>
+        <div class="lower-right-container">
+            <div class="blue-container"></div>
+            <div class="white-container-4 white-containers"></div>
+        </div>
+    </div>
+    <!--    
+    <div class="fourth-block">
+      <div class="white-container-3"></div>
+      <div class="blue-container"></div>
+      <div class="white-container-4"></div>
+    </div>
+    <div class="white-container-5"></div>
+    <div class="sixth-block"></div>
+    -->
   </div>
 </body>
 
